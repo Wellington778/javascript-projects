@@ -1,0 +1,146 @@
+@import "https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css";
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+:root{
+    --modal-card-title-color: rgba(46, 46, 46, 0.411);
+}
+
+body {
+    font-family: 'Lato';
+}
+
+.modal-background {
+    background-color: var(--modal-card-title-color);
+}
+
+.modal-note-header{
+    height: fit-content;
+}
+
+.card-title {
+    word-wrap:break-word;
+}
+
+::-webkit-scrollbar {
+    width: 1px;
+}
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 1px grey; 
+    border-radius: 10px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgb(188, 188, 188); 
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #6e6e6e; 
+  }
+
+.modal-card {
+    width: 400px;
+    overflow-x: hidden;
+}
+
+.modal-card-foot {
+    background-color: rgb(255, 255, 255)
+}
+
+.modal-header-input {
+    height: fit-content;
+}
+
+.task-card {
+    border: 1px solid rgba(128, 128, 128, 0.226);
+    border-radius: 8px;
+    box-shadow: none;
+    height: fit-content;
+}
+
+.task-card:hover {
+    -webkit-box-shadow: 0px 3px 5px 1px rgba(204,204,204,1);
+    -moz-box-shadow: 0px 3px 5px 1px rgba(204,204,204,1);
+    box-shadow: 0px 3px 5px 1px rgba(204,204,204,1);
+    transition: 0.1s;
+}
+
+.card-footer {
+    border-top: 0;
+}
+textarea {
+    resize: none;
+    height: 21px;
+    overflow: hidden;
+    border: none;
+    outline: none;
+    width: 100%;
+}
+
+.color-selector {
+    border-top: 1px solid gray;
+
+}
+
+.add-task-close:hover{
+    background-color: rgb(211, 211, 211);
+    transition: 0.5s;
+}
+
+.task-card:hover .card-icon {
+    visibility: visible;
+    transition: 0.1s;
+    opacity: 1;
+}
+
+.color-icon {
+    border-radius: 50px;
+    border: 1px solid gray;
+}
+
+.color-icon:hover {
+    box-shadow: 0px 3px 5px 1px rgba(204,204,204,1);
+    height: 35px;
+    width: 35px;
+    transition: 1s;
+}
+
+.item-icon:hover {
+    background-color: rgb(197, 197, 197);
+    border-radius: 10em;
+    transition: 0.2s;
+}
+
+.item-icon {
+    border: none;
+    background-color: transparent;
+}
+
+.card-icon{
+    transition: 1s;
+    opacity: 0;
+}
+
+.card-icon:hover {
+    background-color: rgb(201, 201, 201);
+    border-radius: 10em;
+    transition:2s;
+}
+[contenteditable] {
+    outline: 0px solid transparent;
+  }
+
+
+.input-note {
+    -webkit-box-shadow: 0px 3px 5px 1px rgba(204,204,204,1);
+    -moz-box-shadow: 0px 3px 5px 1px rgba(204,204,204,1);
+    box-shadow: 0px 3px 5px 1px rgba(204,204,204,1);
+
+}
+
+.has-background-info{
+    background-color: rgb(50, 211, 251);
+}

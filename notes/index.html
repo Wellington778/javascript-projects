@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html class="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Notas</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <nav class="level notification">
+
+        <p class="level-item has-text-centered">
+            <span class="title is-4">notas</span>
+        </p>
+
+    </nav>
+    <div class="container">
+
+        <!-- -------------------------- -->
+
+
+
+        <div class="columns is-justify-content-center  is-mobile is-tablet is-desktop">
+
+            <div class="column  box is-8-mobile add-note-shield is-8-tablet is-6-desktop mb-2 py-1 input-note">
+                <input value="Criar uma nota..." type="text" placeholder="Criar uma nota..." readonly
+                    class="input is-static is-full-width">
+            </div>
+
+            <div class="column add-note-form is-hidden box is-8-mobile is-8-tablet is-6-desktop mb-2 py-1 input-note">
+
+                <input type="text" placeholder="titulo" name="title"
+                    class="input has-text-weight-medium is-size-5 pt-0 note-title is-static is-full-width">
+
+                <textarea type="text" placeholder="Criar uma nota..." aria-multiline='true' oninput="auto_grow(this)"
+                    class="is-size-6 p-0 has-fixed-size note-body is-static "></textarea>
+
+                <div class="card-footer">
+                    <!-- <div class="card-footer-item is-justify-content-left p-0 pt-1 m-0">
+                        <span class="fa p-2 fa-solid btn-color item-icon is-clickable fa-palette">
+
+                        </span>
+
+                    </div> -->
+                </div>
+                <div class="card-footer-item is-justify-content-right pt-2 pb-0">
+                    <a class="text close-note-creation px-3 py-1 has-text-weight-semibold has-text-dark">Salvar</a>
+                </div>
+
+
+            </div>
+        </div>
+
+
+
+        <div class="modal">
+            <div class="modal-background"></div>
+            <div class="modal-card pb-3 box">
+                <section class="modal-card-body pt-0 pl-0">
+                    <input value="Titulo" type="text" placeholder="Dê um título para sua nota"
+                        class="input title modal-note-header is-4 pt-0 mb-0 is-static is-full-width">
+                    <p contenteditable='true' class="modal-note-body">
+                    </p>
+
+                </section>
+                <div class="card-footer is-justify-content-right pt-2">
+                    <button class="text button is-white is-align-right close-modal has-text-dark"><strong>Fechar</strong></button>
+                    <button class="pl-3 button is-white text is-align-right update-note has-text-dark"><strong>Salvar</strong></a>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="columns is-justify-content-center notes-container is-multiline is-tablet is-mobile">
+
+        </div>
+
+
+    </div>
+    <div class="container">
+    </div>
+</body>
+
+<script src="script.js"></script>
+<script src="https://kit.fontawesome.com/9ab08e4532.js" crossorigin="anonymous"></script>
+
+</html>
